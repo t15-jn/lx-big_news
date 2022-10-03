@@ -1,3 +1,15 @@
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "cSpell.words": [
+    "layui"
+  ],
+  "cSpell.ignoreWords": [
+    "Prefilter",
+    "ajax",
+    "iconfont",
+    "layui",
+    "repwd",
+    "uesrinfo",
+    "userinfo"
+  ]
 }
