@@ -12,8 +12,6 @@ function getUserInfo() {
       Authorization: localStorage.getItem('token') || ''
     }, */
     success(res) {
-      console.log(res)
-      console.log(res.data)
       if (res.status !== 0) return layui.layer.msg('获取用户信息失败!')
       renderAvatar(res.data)
     },
@@ -33,7 +31,7 @@ function getUserInfo() {
 //渲染用户头像
 function renderAvatar(user) {
   //渲染用户名
-  console.log(user)
+  // console.log(user)
   const  name =  user.nickname || user.username 
   $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
   //渲染头像

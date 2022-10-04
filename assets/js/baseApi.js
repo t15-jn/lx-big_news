@@ -8,7 +8,6 @@ $.ajaxPrefilter(function (config) {
     //不论请求成功与否都会执行 
     config.complete =function(res) {
       if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
-        console.log(111)
         //强制清除本地储存
         localStorage.removeItem('token')
         //调回登录页
